@@ -1,0 +1,46 @@
+/* ==========================================
+   PENGAJUAN - Page Specific Styles
+   ========================================== */
+
+.status-Disetujui { background: rgba(25, 135, 84, 0.1); color: #198754; }
+.status-Menunggu { background: rgba(255, 193, 7, 0.1); color: #d97706; }
+.status-Ditolak { background: rgba(220, 53, 69, 0.1); color: #dc3545; }
+
+.btn-detail { background: rgba(37, 99, 235, 0.1); color: #2563eb; }
+.btn-detail:hover { background: #2563eb; color: #fff; }
+
+.btn-approve { background: rgba(25, 135, 84, 0.1); color: #198754; }
+.btn-approve:hover { background: #198754; color: #fff; }
+
+.btn-reject { background: rgba(220, 53, 69, 0.1); color: #dc3545; }
+.btn-reject:hover { background: #dc3545; color: #fff; }
+
+.detail-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.detail-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #94a3b8;
+    min-width: 140px;
+    flex-shrink: 0;
+}
+
+.detail-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+}

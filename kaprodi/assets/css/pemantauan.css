@@ -1,0 +1,78 @@
+/* ==========================================
+   PEMANTAUAN DOSEN - Page Specific Styles
+   ========================================== */
+
+/* Avatar Group */
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+.avatar-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+.avatar-item:first-child {
+    margin-left: 0;
+}
+.avatar-more {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+/* Table Header */
+.table thead {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.table thead th {
+    font-weight: 600;
+}
+.table thead th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+.table thead th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Table Body */
+.table tbody .sub-text {
+    font-size: 12px;
+}
+
+/* Bimbingan Count */
+.bimbingan-count {
+    font-size: 15px;
+    color: #1e293b;
+}
+
+/* Badge with larger font */
+.badge-lg {
+    font-size: 13px;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: #7c3aed;
+}
+.pagination .page-item.active .page-link {
+    background-color: #7c3aed;
+    border-color: #7c3aed;
+    color: #fff;
+}
+
+/* Page Title */
+.page-title {
+    color: #1e293b;
+}

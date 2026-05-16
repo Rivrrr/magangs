@@ -1,0 +1,17 @@
+/* ==========================================
+   DOSEN - Page Specific Styles
+   ========================================== */
+
+.status-Aktif { background: rgba(25, 135, 84, 0.1); color: #198754; }
+.status-Cuti { background: rgba(255, 193, 7, 0.1); color: #d97706; }
+
+.badge-bimbingan {
+    background: #eef2ff;
+    color: #2563eb;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}

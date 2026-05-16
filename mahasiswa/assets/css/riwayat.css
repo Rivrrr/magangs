@@ -1,0 +1,88 @@
+/* ==========================================
+   RIWAYAT - Page Specific Styles
+   ========================================== */
+
+/* Timeline Enhancements */
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e2e8f0;
+    border-radius: 2px;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+.timeline-icon {
+    position: absolute;
+    left: -40px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    z-index: 1;
+    font-size: 14px;
+    box-shadow: 0 0 0 4px #fff;
+    transition: all 0.3s ease;
+}
+.timeline-item:hover .timeline-icon {
+    transform: scale(1.1);
+}
+
+.timeline-icon.primary { border-color: #2563eb; color: #2563eb; background: #eff6ff; }
+.timeline-icon.success { border-color: #10b981; color: #10b981; background: #ecfdf5; }
+.timeline-icon.warning { border-color: #f59e0b; color: #f59e0b; background: #fffbeb; }
+.timeline-icon.info { border-color: #0ea5e9; color: #0ea5e9; background: #f0f9ff; }
+.timeline-icon.danger { border-color: #ef4444; color: #ef4444; background: #fef2f2; }
+
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+.timeline-item:hover .timeline-content {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+    border-color: #e2e8f0;
+}
+.timeline-date {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.timeline-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+.timeline-desc {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}

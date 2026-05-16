@@ -1,0 +1,93 @@
+/* ==========================================
+   BERANDA - Page Specific Styles
+   ========================================== */
+
+.card h3 { font-weight: 700; }
+.status-item span:last-child { font-weight: 600; }
+
+/* CARD */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* PIE CHART */
+.pie-chart {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.pie-chart::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* LEGEND */
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* STATUS */
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+/* ACTIVITY */
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-warning-soft {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+.bg-success-soft {
+    background: rgba(25, 135, 84, 0.2);
+    color: #198754;
+}
+
+.bg-danger-soft {
+    background: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+}
+
+/* NOTIFICATION BELL */
+.notification-bell {
+    position: relative;
+    color: #64748b;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.notification-bell .badge {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    font-size: 10px;
+    padding: 3px 5px;
+    background-color: #ea580c;
+}

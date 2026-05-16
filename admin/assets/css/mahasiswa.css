@@ -1,0 +1,7 @@
+/* ==========================================
+   MAHASISWA - Page Specific Styles
+   ========================================== */
+
+.status-Berlangsung { background: rgba(13, 110, 253, 0.1); color: #0d6efd; }
+.status-Selesai { background: rgba(25, 135, 84, 0.1); color: #198754; }
+.status-Menunggu { background: rgba(255, 193, 7, 0.1); color: #d97706; }

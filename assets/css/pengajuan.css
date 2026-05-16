@@ -1,0 +1,137 @@
+/* ==========================================
+   PENGAJUAN - Page Specific Styles
+   ========================================== */
+
+/* FORM CARD */
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+}
+
+.form-section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+}
+
+.form-section-title i {
+    color: #2563eb;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.form-control, .form-select {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.form-control[readonly] {
+    background-color: #f8fafc;
+    color: #64748b;
+    border-color: #e2e8f0;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.file-upload-wrapper:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-icon {
+    font-size: 32px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.file-upload-wrapper:hover .file-upload-icon {
+    color: #2563eb;
+}
+
+.file-upload-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.file-upload-hint {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+    color: white;
+}
+
+/* SUCCESS MODAL SPECIFIC */
+.success-icon {
+    background: rgba(25, 135, 84, 0.1) !important;
+    color: #198754 !important;
+}
+.btn-success-modal {
+    background: #198754 !important;
+    color: #fff !important;
+}
+.btn-success-modal:hover {
+    background: #157347 !important;
+}

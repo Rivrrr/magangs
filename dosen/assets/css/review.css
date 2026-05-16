@@ -1,0 +1,36 @@
+/* ==========================================
+   REVIEW (Logbook & Laporan) - Shared Styles
+   ========================================== */
+
+/* Filter Pills */
+.filter-pills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+.filter-pill {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    background: white;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.filter-pill:hover {
+    background: #f8fafc;
+}
+.filter-pill.active {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #2563eb;
+}
+
+@media (max-width: 576px) {
+    .filter-pills { flex-wrap: nowrap; }
+}
