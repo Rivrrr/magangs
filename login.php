@@ -1,8 +1,9 @@
-﻿<?php
+<?php
 session_start();
 
 require_once 'config/database.php';
 require_once 'config/userchecker.php';
+require_once 'config/google_oauth.php';
 
 if (isset($_SESSION['user'])) {
 
@@ -29,6 +30,10 @@ if (isset($_SESSION['user'])) {
 }
 
 $error = "";
+if (isset($_SESSION['login_error'])) {
+    $error = $_SESSION['login_error'];
+    unset($_SESSION['login_error']);
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -90,6 +95,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/login.css">
+    <style>
+        .btn-google {
+            background-color: #fff;
+            color: #757575;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 500;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .btn-google:hover {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-google img {
+            width: 20px;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            color: #6c757d;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+        .divider:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .divider:not(:empty)::after {
+            margin-left: .25em;
+        }
+    </style>
 </head>
 <body>
 
@@ -112,6 +155,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     <?php endif; ?>
+
+    <a href="<?= getGoogleLoginUrl() ?>" class="btn btn-google mb-3 w-100 py-2" style="border-radius: 12px;">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+        Masuk dengan Google (SSO)
+    </a>
+
+    <div class="divider">ATAU</div>
 
     <form method="POST">
 
